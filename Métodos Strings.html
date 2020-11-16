@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+  <script>
+    function texto(contador) {
+      return contador.length;
+    }
+    console.log(texto('Hola mundo'));
+
+
+    function recortado(cortado) {
+      return cortado.slice(0, 5);
+    }
+    console.log(recortado("Hola mundo"));
+
+    function separado(cadena, separador) {
+      let arrayDeCadenas = cadena.split(separador);
+      document.write("<br>La cadena tiene " + arrayDeCadenas.length + " elementos: ");
+      for (var i = 0; i < arrayDeCadenas.length; i++) {
+        document.write(arrayDeCadenas[i] + " ,");
+      }
+    }
+    {
+      var cadenaOriginal = "Hola mundo como estas por ahí";
+      var cadenaEnsayo = "Hola, como, estas, chespirito";
+      var espacio = " ";
+      var coma = ",";
+      separado(cadenaOriginal, espacio);
+      separado(cadenaEnsayo, coma);
+    }
+    /* esto es un comentario */
+
+    function repetir(repite) {
+
+      document.write(repite.repeat(3));
+
+    }
+    console.log(repetir("Hola mundo"));
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
