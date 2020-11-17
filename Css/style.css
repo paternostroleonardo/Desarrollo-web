@@ -1,0 +1,52 @@
+
+
+/* Agregamos el fondo*/
+body {
+    background: url(../imagen/fondo.jpg);
+}
+/* Creamos una lista ul y le asignamos las propiedades, list-style: le damos ningun tipo de lista, la pocisión de los elementos es relativa, le asiganamos ancho, largo etc... un fondo con degradado para darle efecto, un border circular con radius y por le pasamos una sombra con box-shadow*/
+ul.semaforo {
+float:right;
+position: relative;
+width: 100px;
+margin: 0 50px;
+padding: 15px;
+list-style-type: none;
+border: 6px double gray;
+background:  gray;
+background: linear-gradient( -90deg, black 0%, grey 100%);
+border-radius: 20%;
+box-shadow: 0px 0px 0 20px rgba(255, 238, 0, 0.76);
+}
+/* Creamos las propiedades para cada elemento de la lista UL, los famosos li, le pasamos sus respectivas caracteristicas, una sombra dentro de cada elemento con inset, un degradado lineal para efectos*/
+ul.semaforo li {
+position:relative;
+width: 100px;
+height: 100px;
+border-radius: 100%;
+margin: 10px 0;
+background: linear-gradient(top, rgba(187,187,187,1) 0%,rgba(119,119,119,1) 99%);
+box-shadow: inset 0 -5px 15px rgba(255,255,255,0.4),
+inset -2px -1px 40px ;
+}
+/*Agregamos el pseudoelemento after, para agregar dentro de cada li, el efecto del reflejo de cada semaforo, recibimos los elementos li con un "" vacio en content*/
+ul.semaforo li:after {
+content: "";
+width: 60px;
+height: 30px;
+position: absolute;
+left: 20px;
+top: 10px;
+box-shadow: 0px 0 20px 35px rgba(20,20,20,.1);
+border-radius: 30px / 15px;
+}
+/* Agregamos secuencialmente los colores con el metodo nth-of-type para darle un numero fijo a cada posición que le queremos dar a cada color dentro de sus respectivos li*/
+.rojo li:nth-of-type(1) {
+background: #ff0000;
+}
+.naranja li:nth-of-type(2) {
+background: #ff9933;
+}
+.verde li:nth-of-type(3) {
+background: #00ff00;
+}
