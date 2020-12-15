@@ -1,8 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
-#root{
-    background-color: blue;
-    font-family: 'Manrope', sans-serif;
+* {
+    box-sizing: border-box;
 }
-.main{
-    background-color: brown;
+
+
+.card__image-container{
+   background-color: #fff;
+   border-radius: 10px;
+   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+   display: inline-flex;
+   max-width: 200%;
+   margin: 40px;
+   margin-left: 20%;
+   overflow: hidden;
+   width: 700px;
+}
+.card__image {
+     height: 270px;
+     width: 270px;
+}
+
+.card_body{
+}
+.card_texto{
+position:relative;
+margin: 8px 25px 10px 30px;
+font-size: 80%;
+font-family: sans-serif;
+font-style: oblique;
+}
+.card_title{
+
+}
+.card_parrafo{
+}
+.information{
+position:absolute;
+margin: 8px 25px 10px 300px;
+}
+.information__image-contanier{
+   }
+.information__image{
+ height: 38px;
+ width: 38px;
+ top: 205px;
+background-size: cover;
+ background-position: center;
+ position: absolute;
+ border-radius: 50%; 
+}
+.information__detail{
+position: absolute;
+font-size: 85%;
+font-family: sans-serif;
+font-style: oblique;
+margin: 8px 25px 10px 55px;
+}
+.information__name{
+position: relative;;
+top: 200px;
+}
+.information__date{
+position:relative; 
+top: 200px;
+float: left;
+}
+.information__shared{
+position: relative;
+margin: 210px 20px 100px 340px;
+width: 50px;
+height: 50px;
 }
