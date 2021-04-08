@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style media="screen">
+      .character {
+        display: flex;
+        width: 550px;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div id="characters">
+
+    </div>
+    <form id="formulario">
+        <div class="form-group row">
+            <label for="number" class="col-2 col-form-label">Numero de personajes</label>
+            <div class="col-10">
+                <input id="number" name="number" class="form-control" type="text" value="">
+            </div>
+        </div>
+        <input name="boton" value="solicitar" type="button" onclick="obtenerDato()">
+    </form>
+    <script src="js/api.js" charset="utf-8"></script>
+  </body>
+</html
